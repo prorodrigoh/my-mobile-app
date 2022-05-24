@@ -20,5 +20,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'beige',
         alignItems: 'center',
         padding: 14,
+    },
+    button: {
+        margin: 2,
+        
     }
 })

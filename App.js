@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button} from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import Counter from './src/components/Counter';
+import Hero from './src/components/Hero';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Hello !</Text>
-      <Button title='Just click me...' color="#841584" />
+      <Hero />
       <Counter />
       <StatusBar style="auto" />
     </View>
@@ -14,14 +14,9 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  heading: {
-    fontSize: 38,
-    color: '#fff'
-  },
-
   container: {
     flex: 1,
-    backgroundColor: '#f0a',
+    backgroundColor: '#556b2f',
     alignItems: 'center',
     justifyContent: 'center',
   },
